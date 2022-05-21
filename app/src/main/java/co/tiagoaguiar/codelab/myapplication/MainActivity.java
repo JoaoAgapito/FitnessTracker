@@ -20,12 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
 		// codigo para abrir uma nova tela depois do evento de click.
 
-		btnImc.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(MainActivity.this, imcActivity.class);
-				startActivity(intent);
-			}
+		btnImc.setOnClickListener(view -> {
+			Intent intent = new Intent(MainActivity.this, imcActivity.class);
+			startActivity(intent);
 		});
 	}
 }
