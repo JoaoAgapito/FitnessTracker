@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,6 +52,14 @@ public class imcActivity extends AppCompatActivity {
                     .setPositiveButton(android.R.string.ok, (dialogInterface, i) -> {
 
                     })
+                    .setNegativeButton(R.string.save,((dialog1, which) -> {
+                         long calcId = SqlHelper.getInstance(imcActivity.this).addItem("imc", result);
+                        if (calcId > 0)
+                            Toast.makeText(imcActivity.this, R.string.saved, Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(imcActivity.this, ListCalcActivity.class);
+                            intent.putExtra("type", "imc");
+                            startActivity(intent);
+                    }))
                     .create();
 
             dialog.show();
