@@ -2,7 +2,7 @@ package co.tiagoaguiar.codelab.myapplication;
 
 public class Register {
     String type;
-    double response;
-    String createdDate;
+   double response;
+   String createdDate;
 
 }

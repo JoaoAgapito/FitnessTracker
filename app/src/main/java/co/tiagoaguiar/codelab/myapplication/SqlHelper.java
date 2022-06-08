@@ -40,13 +40,12 @@ public class SqlHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         Log.d("Teste", "on Upgrade disparado");
-
     }
 
-    List<Register> getRegister(String type) {
+    List<Register> getRegisterBy(String type) {
         List<Register> registers = new ArrayList<>();
 
-        SQLiteDatabase db = getWritableDatabase();
+        SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM calc WHERE type_calc = ?", new String[]{type});
 
         try {
@@ -57,6 +56,9 @@ public class SqlHelper extends SQLiteOpenHelper {
                     register.type = cursor.getString(cursor.getColumnIndex("type_calc"));
                     register.response = cursor.getDouble(cursor.getColumnIndex("res"));
                     register.createdDate = cursor.getString(cursor.getColumnIndex("created_date"));
+
+                    registers.add(register);
+
                 } while (cursor.moveToNext());
             }
 

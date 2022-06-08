@@ -1,5 +1,6 @@
 package co.tiagoaguiar.codelab.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -52,13 +55,18 @@ public class imcActivity extends AppCompatActivity {
                     .setPositiveButton(android.R.string.ok, (dialogInterface, i) -> {
 
                     })
-                    .setNegativeButton(R.string.save,((dialog1, which) -> {
-                         long calcId = SqlHelper.getInstance(imcActivity.this).addItem("imc", result);
-                        if (calcId > 0)
-                            Toast.makeText(imcActivity.this, R.string.saved, Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(imcActivity.this, ListCalcActivity.class);
-                            intent.putExtra("type", "imc");
-                            startActivity(intent);
+                    .setNegativeButton(R.string.save, ((dialog1, which) -> {
+
+                        new Thread(() -> {
+                            long calcId = SqlHelper.getInstance(imcActivity.this).addItem("imc", result);
+                            runOnUiThread(() -> {
+                                if (calcId > 0) {
+                                    Toast.makeText(imcActivity.this, R.string.saved, Toast.LENGTH_SHORT).show();
+                                    openListCalcActivity();
+
+                                }
+                            });
+                        }).start();
                     }))
                     .create();
 
@@ -70,6 +78,31 @@ public class imcActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+       switch (item.getItemId()) {
+           case R.id.menu_list:
+               openListCalcActivity();
+               return true;
+           default:
+               return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    // INFLANDO O MENU NA TELA
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void openListCalcActivity() {
+        Intent intent = new Intent(imcActivity.this, ListCalcActivity.class);
+        intent.putExtra("type", "imc");
+        startActivity(intent);
+    }
+
 
     @StringRes
     private int imcResponse(double imc) {
