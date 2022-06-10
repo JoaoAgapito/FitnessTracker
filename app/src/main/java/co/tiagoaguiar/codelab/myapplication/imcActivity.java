@@ -44,6 +44,7 @@ public class imcActivity extends AppCompatActivity {
 
             int height = Integer.parseInt(sHeight);
             int wheight = Integer.parseInt(sWeight);
+
             double result = calculateImc(height, wheight);
             Log.d("TESTE", "Resultado: " + result);
 
