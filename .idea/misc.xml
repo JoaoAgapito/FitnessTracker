@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/background.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/bg_button_accent.xml" value="0.25" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/bg_button_menu.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic__250.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic__3546__convertido_.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic__9992222.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic_baseline_wb_sunny_24.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2985" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic_logo__convertido_.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/ic_logo_imc.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/drawable/layout_form.xml" value="0.2985" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/layout/activity_imc.xml" value="0.36666666666666664" />
@@ -16,6 +22,7 @@
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/layout/activity_tmb.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/layout/main_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joaov/AndroidStudioProjects/FitnessTracker/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2985" />
       </map>
     </option>
   </component>

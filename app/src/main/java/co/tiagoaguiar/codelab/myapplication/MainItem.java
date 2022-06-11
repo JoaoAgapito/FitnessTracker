@@ -6,7 +6,7 @@ public class MainItem {
     private int textStringID;
     private int color;
 
-    public MainItem(int id, int drawableID, int textStringID, int color) {
+    public MainItem(int id, int drawableID, int textStringID) {
         this.id = id;
         this.drawableID = drawableID;
         this.textStringID = textStringID;

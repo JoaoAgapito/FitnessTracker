@@ -17,12 +17,12 @@
     <string name="imc_severely_high_weight">Severamente obeso</string>
     <string name="imc_extreme_weight">Extremamente obeso</string>
 
-    <string name="imc_response">Imc %1$.2f</string>
-    <string name="tmb_response">Imc %1$.2f</string>
+    <string name="imc_response">Seu IMC é: %1$.2f</string>
+    <string name="tmb_response">Quantidade de calorias: %1$.2f</string>
     <string name="list_response">Resultado %1$.2f, data: %2$s</string>
     <string name="save">Salvar</string>
     <string name="saved">Registro salvo com sucesso!</string>
     <string name="search">Buscar</string>
-    <string name="tmb_desc">TBM é o cálculo para descobrir a quantidade calórica que o corpo necessita com base no seu estilo de vida.</string>
+    <string name="tmb_desc">TMB é o cálculo para descobrir a quantidade calórica que o corpo necessita com base no seu estilo de vida.</string>
     <string name="age">Idade</string>
 </resources>

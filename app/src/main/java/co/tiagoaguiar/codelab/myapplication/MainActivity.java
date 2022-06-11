@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         rvMain = findViewById(R.id.main_rv);
 
         List<MainItem> mainItems = new ArrayList<>();
-        mainItems.add(new MainItem(1, R.drawable.ic_baseline_wb_sunny_24, R.string.label_imc, Color.GREEN));
-        mainItems.add(new MainItem(2, R.drawable.ic_baseline_visibility_24, R.string.label_tmb, Color.BLUE));
+        mainItems.add(new MainItem(1, R.drawable.ic__3546__convertido_, R.string.label_imc));
+        mainItems.add(new MainItem(2, R.drawable.ic__250, R.string.label_tmb));
 
 
         rvMain.setLayoutManager(new GridLayoutManager(this, 2));

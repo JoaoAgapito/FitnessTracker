@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#1E88E5</item>
+        <item name="colorPrimaryDark">#1E88E5</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -30,6 +30,16 @@
         <item name="android:paddingStart">20dp</item>
         <item name="android:paddingEnd">20dp</item>
         <item name="android:background">@drawable/bg_button_accent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LogoForm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:background">@drawable/bg_button_menu</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 

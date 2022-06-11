@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/colorLigtGray">
 
 
     <LinearLayout
@@ -39,9 +42,9 @@
         <Spinner
             android:id="@+id/spinner_tmb_lifestyle"
             style="@style/SpinnerForm"
-            android:entries="@array/tmb_lifestyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:entries="@array/tmb_lifestyle" />
 
         <Button
             android:id="@+id/btn_tmb_send"
